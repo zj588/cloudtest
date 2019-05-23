@@ -15,7 +15,7 @@ public class HelloController {
 
     @RequestMapping("/hi")
     public String hi(@RequestParam String name) {
-        System.out.println("??????????????");
+        System.out.println("service-ribbon hi");
         return helloService.hiService(name);
     }
 

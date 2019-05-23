@@ -16,6 +16,7 @@ public class FeginHiController {
 
     @RequestMapping(value = "/hi")
     public String sayHi(@RequestParam String name) {
+        System.out.println("service-Fegin hi");
         return testFeginService.testFeginService(name);
     }
 }
